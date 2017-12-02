@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:elevation="150dp"
+    android:layout_width="match_parent"
+    android:id="@+id/i"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        android:alpha="0.4"
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:id="@+id/t1"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/t1"
+        android:id="@+id/t2"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
+
+    </com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper>
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gadspiro.bharani.hack.LoginActivity">
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/t1"
+        android:layout_centerHorizontal="true"
+        app:mtf_labelColor="@android:color/holo_orange_dark"
+        android:layout_width="300dp"
+        app:mtf_image="@drawable/ic_phone_black_24dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="phone"
+            android:hint="Mobile Number"
+            android:id="@+id/nume"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_below="@+id/t1"
+        app:mtf_labelColor="@android:color/holo_orange_dark"
+        android:layout_centerHorizontal="true"
+        app:mtf_image="@drawable/ic_lock_black_24dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    <EditText
+
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/passe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+    
+    <Button
+        android:id="@+id/signin"
+        android:layout_centerInParent="true"
+        android:background="#df5454"
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/signup"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_below="@id/signin"
+        android:text="New user? Register Account."
+        android:clickable="true"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
